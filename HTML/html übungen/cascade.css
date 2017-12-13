@@ -1,0 +1,43 @@
+body { 
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#333
+
+}
+
+section {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: purple;
+}
+
+p {
+    padding: 10px;
+}
+
+#linkebox {
+	float: left;
+	width: 180px;
+	height: 120px;
+}
+
+#rechtebox {
+	float: right;
+	width: 820px;
+	height: 120px;
+}
+
+.text {
+	text-indent: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+

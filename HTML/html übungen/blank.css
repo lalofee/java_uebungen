@@ -1,0 +1,43 @@
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+	background-color: #f4f4f4;
+	border: 1px solid black;
+}
+.container {
+	width: 600px;
+	height: 70px;
+	margin: 0 auto;
+	background-color: #99ccff;
+	text-align: center;
+}
+header, article {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid black;
+	text-align: center;
+}
+.column1 {
+	width: 150px;
+	height: 70px;
+	background-color: #99ccff;
+	float: left;
+	text-align: center;
+}
+.column2 {
+	width: 150px;
+	height: 70px;
+	background-color: #99ccff;
+	margin: 0 auto;
+	text-align: center;
+}
+.column3 {
+	width: 150px;
+	height: 70px;
+	background-color: #99ccff;
+	float: right;
+	text-align: center;
+}
+footer {
+	text-align: center;
+}

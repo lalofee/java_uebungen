@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java grounding</title>
+
+	<style>
+        output {
+	display: block;
+	background-color: white;
+}
+
+    </style>
+</head>
+<body>
+<!--Kontrabass	<h1>Strings 5 - Vokale ändern</h1>
+<main>
+	<textarea cols="50" rows="8"> Drei Chinesen mit dem Kontrabass saßen auf der Straße und erzählten sich was. Da
+		kam die Polizei, fragt‚ Was ist denn das?‘ Drei Chinesen mit dem Kontrabass.</textarea>
+	<button type="button" id="button">Los</button>
+	<p>Mit einem Klick auf den Button ändern Sie die Vokale im Textfeld. Sie können auch
+		eigenen Text eingeben.</p>
+	<output></output>
+</main>-->
+
+<!------------------------------------------------------------>
+
+<!--6) temperatur<button onclick="document.getElementById('info').innerHTML = getRndInteger(-5,25)">Click Me</button>
+
+<p id="info"></p>-->
+
+
+<script>
+
+//-------------------------------------------------------------	
+//  1)  slicing:
+
+	var begriff = "This is a simple way of learning strings"
+	var extraktThis = begriff.slice(0, 4);
+	var extraktSimpleWay = begriff.slice(10, 20);
+	var extraktLearning = begriff.slice(24, 32);
+
+	
+	console.log(extraktThis);
+	console.log(extraktSimpleWay);
+	console.log(extraktLearning);
+
+//-----------------------------------------------------------
+//	2)	VARIABLES:
+
+var numberOfSeconds = 60;
+var numberOfMinutes = 60;
+var numberOfSecondsPerHour = numberOfSeconds * numberOfMinutes;
+
+console.log(numberOfSecondsPerHour);
+
+var numberOfHoursPerDay = 24;
+
+var numberOfSecondsPerday = numberOfSecondsPerHour * numberOfHoursPerDay;
+
+console.log(numberOfSecondsPerday);
+
+var numberOfSecondsPerYear = numberOfSecondsPerday * 365;
+
+console.log(numberOfSecondsPerYear);
+
+
+//--------------------------------------------------------------
+//   3)   OPERATORS:
+
+var myNumber = 5;
+
+myNumber++;
+myNumber++;
+myNumber--;
+
+console.log(myNumber);
+
+//--------------------------------------------------------------    
+
+var x = 10;
+
+//x = x + 5; 
+//x += 5;
+//x = x - 3; 
+x += 3;
+console.log(x);
+
+//--------------------------------------------------------------
+//       4)    STRINGS:
+
+var c = "Code";
+var f = "Factory";
+
+var allLen = c.length + f.length;
+
+//var xLen = x.length;
+//var yLen = y.length;
+//var allLen = xLen + yLen;
+
+console.log(allLen);
+
+//---------------------------------------------------------------
+
+var ganzerSatz = "thiS iS suCh a loVEly DAY since i LOVE jaVAsCript"
+
+//var satzLaenge = ganzerSatz.length;
+//console.log(satzLaenge);
+
+
+var kleinerSatz = ganzerSatz.toLowerCase();
+
+//console.log(kleinerSatz);
+
+var extraktT = kleinerSatz.slice(0, 1);
+var extraktT = extraktT.toUpperCase();
+
+//console.log(extraktT);
+
+var restSatz = kleinerSatz.slice(1, 49)
+
+//console.log(restSatz);
+
+var ersterSatz = extraktT + restSatz;
+console.log(ersterSatz);
+
+var extraktJ = kleinerSatz.slice(39, 40);
+var extraktJ = extraktJ.toUpperCase();
+
+var extraktS = kleinerSatz.slice(43, 44);
+var extraktS = extraktS.toUpperCase();
+
+var zweiterSatz = kleinerSatz.toUpperCase((39, 40) + (43, 44));
+console.log(zweiterSatz);
+
+//----------------------------------------oben unfertig
+//    5)   Kontrabass
+
+/*document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('button').addEventListener('click', changeVowels);
+  var durchlauf = 0;
+ 
+  function changeVowels() {
+    var vowels = ['a', 'e', 'i', 'o', 'u', 'ä', 'ö', 'ü'];	  
+    var text = document.querySelector('textarea').innerHTML; 
+    var ergebnis = text.replace(/[aeiouäöü]/ig, vowels[durchlauf]);
+ 
+    document.querySelector('textarea').value = ergebnis;
+     if (durchlauf < (vowels.length - 1)) {
+	   durchlauf ++;
+	 }
+	 else {
+	   durchlauf = 0;
+	 }
+  }
+});*/
+
+//--------------------------------------------------------
+
+function begruesse () {
+return "Moin!"
+}
+var begruessung = begruesse();
+console.log(begruessung);
+
+//---------------------------------------------------------
+//   6) temperatur
+
+function getRndInteger(min, max) {
+   var temp=Math.floor(Math.random() * (max - min)) + min;
+  
+   if(temp>-5 && temp<10 )
+   {
+   	return(temp +" it is cold");
+   }else{
+   	return(temp + " it is warm");
+   }
+}
+
+//------------------------------------------------------------
+//         Boolean & logical expressions
+
+
+var alreadyWashedMyHands = true; 
+var didIForgotToBuySomeFood = false; 
+var isItAlreadyBreakTime = true;
+
+console.log(alreadyWashedMyHands);
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

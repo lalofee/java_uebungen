@@ -1,0 +1,13 @@
+body { 
+
+	font-family: Courier, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#333
+    margin: 10px auto;
+	max-width: 60em;
+
+}
+
+* {
+	  padding: 3px;margin:5px;
+	}

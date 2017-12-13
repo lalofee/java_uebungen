@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id = "a"></p>	
+<p id = "b"></p>
+<script>
+
+/*var age = prompt('Geben Sie bitte ihr alter ein');
+var isAtLeast18;
+if (age >= 18) {
+	isAtLeast18 = true;	
+} else {
+	isAtLeast18 = false;
+}
+console.log(isAtLeast18);*/
+
+//----------------------------------------------------
+
+/*switch(expression) {
+	case value1:    //Anweisung
+		break;
+	case value2:    //Anweisung
+		break;
+	case value3:    //Anweisung
+		break;
+	case value4:    //Anweisung
+		break;
+	default:        //Anweisung
+} */
+//-----------------------------------------------------
+
+/*this zeigt standardmäßig auf das globale Objekt window. Innerhalb einer Methode, die über objekt.funktion() aufgerufen wird, zeigt es jedoch auf objekt*/
+
+function library(title, author, readingStatus) {
+	this.title = title;
+	this.author = author;
+	this.readingStatus = readingStatus;
+
+	if (this.readingStatus == true) {
+		document.getElementById("a").innerHTML += "<br> Already read" + title; 
+	} else {
+		document.getElementById("b").innerHTML += "<br> You still need to read" + title;
+	}
+};
+
+var book = new library('When Breath Becomes Air', 'Paul Kalanithi', true);
+var book = new library('The Girls', 'Emma Cline ', true);
+var book = new library('The Nest', 'Cynthia', false );
+var book = new library('The Crown', 'Kiera Cass', true);
+var book = new library('Behind Closed Doors', 'B.A. Paris', false);
+var book = new library('It Ends with Us ', 'Colleen Hoover', true);
+
+ 
+
+ 
+
+    
+
+
+
+
+</script>
+</body>
+</html>

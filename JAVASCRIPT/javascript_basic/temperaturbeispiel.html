@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="document.getElementById('info').innerHTML = getRndInteger(-5,25)">Click Me</button>
+
+<p id="info"></p>
+
+<script>
+function getRndInteger(min, max) {
+   var temp=Math.floor(Math.random() * (max - min)) + min;
+  
+   if(temp>-5 && temp<10 )
+   {
+   	return(temp +" it is cold");
+   }else{
+   	return(temp + " it is warm");
+   }
+}
+</script>
+</body>
+</html>

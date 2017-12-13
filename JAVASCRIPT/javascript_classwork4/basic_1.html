@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FOR LOOP EXPLAINED</title>
+	
+</head>
+<body onload="doSomething3()">
+   <div id="result"></div>
+
+<script>
+	
+function doSomething() {
+  document.getElementById("result").innerHTML =  "make my day";
+}
+function doSomething2() {
+  var amsterdam = [1500, 500, 1800, 1200];
+  strResult = "";
+  for (var i=0; i < amsterdam.length; i++) {
+    strResult = strResult + amsterdam[i] + " ";
+  }
+  document.getElementById("result").innerHTML =  strResult;
+}
+function doSomething3() {
+  var amsterdam = [1500, 500, 1800, 1200];
+  var sum = 0;
+  for (var i=0; i < amsterdam.length; i++) {
+    sum  = sum + amsterdam[i];
+  }
+  document.getElementById("result").innerHTML =  sum;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

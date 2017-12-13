@@ -1,0 +1,94 @@
+article {
+    background: #333;
+    height: 700px;
+    margin: 5px auto;
+    border-top: 0.5em dashed #999;
+    border-bottom: 0.5em dashed #999;
+}
+
+section {
+    width: 130px;
+    height: 700px;
+    float: left;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    /* Safari 6.1+ */
+    
+    flex-flow: row wrap;
+}
+
+.vorne {
+    -webkit-align-content: flex-start;
+    /* Safari 6.1+ */
+    
+    align-content: flex-start;
+}
+
+.mittig {
+    -webkit-align-content: center;
+    /* Safari 6.1+ */
+    
+    align-content: center;
+}
+
+.stretch {
+    -webkit-align-content: stretch;
+    /* Safari 6.1+ */
+    
+    align-content: stretch;
+}
+
+.verteilt1 {
+    -webkit-align-content: space-between;
+    /* Safari 6.1+ */
+    
+    align-content: space-between;
+}
+
+.verteilt2 {
+    -webkit-align-content: space-around;
+    /* Safari 6.1+ */
+    
+    align-content: space-around;
+}
+
+section p {
+    border-radius: 0.2em;
+    height: 70px;
+    width: 70px;
+    box-shadow: inset -2px -2px 10px #ccc;
+    margin: 0;
+    font-size: 3em;
+    line-height: 70px;
+    text-align: center;
+    color: black;
+}
+
+.eins {
+    background: yellow;
+}
+
+.zwei {
+    background: orange;
+}
+
+.drei {
+    background: red;
+}
+
+.vier {
+    background: green;
+}
+
+.fuenf {
+    background: skyblue;
+}
+
+.sechs {
+    background: blue;
+}
+
+.sieben {
+    background: purple;
+}
